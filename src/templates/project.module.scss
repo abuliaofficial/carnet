@@ -1,0 +1,64 @@
+@import "../../config/variables";
+.image {
+  > div {
+    height: 100%;
+    width: 100%;
+
+    > div {
+      position: static !important;
+    }
+  }
+}
+
+.content {
+  margin: 0 auto;
+  padding-bottom: $distance;
+  padding-top: $distance;
+}
+
+.headerWrapper {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  min-height: 15rem;
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  background-color: $brand-primary;
+  color: #fff;
+  height: 15rem;
+  padding: 1rem $distance;
+  position: absolute;
+  text-align: center;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.title {
+  margin: 1rem 0;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  margin: $distance $distance;
+  text-align: left;
+}
+
+.top {
+  font-size: 80%;
+  margin-bottom: 0.5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.bottom {
+  font-size: 125%;
+}
