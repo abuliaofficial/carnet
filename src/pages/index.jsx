@@ -24,9 +24,12 @@ export default Index;
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark (sort: { order: ASC, fields: [frontmatter___position]}) {
+    allMarkdownRemark (
+      sort: { order: ASC, fields: [frontmatter___position]}
+    ) {
       edges {
         node {
+          excerpt(pruneLength: 250)
           fields {
             slug
           }

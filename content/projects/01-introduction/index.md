@@ -7,7 +7,7 @@ material: "Parchment, ink"
 position: 1
 ---
 
-First of the few remaining pages of the famous memoir and travelogue of the adventurer, writer and painter credited with introducing Abulia to the European audience.
+First of the few remaining pages of the famous memoir and travelogue of the adventurer, writer and painter credited with introducing [Abulia](/map-of-abulia) to the European audience.
 
 The author recounts here, in imperfect, freshly-learnt Abülski, his first impressions of the unique land. His words written on this very page are believed by some experts to be the source of the well-known adage: _“It is not the destination that matters, but the journey”_.
 

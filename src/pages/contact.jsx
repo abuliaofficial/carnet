@@ -11,8 +11,8 @@ const Contact = () => (
     <Header>Contact</Header>
     <Container text>
       <h1>Contact me!</h1>
-  We are the first social media based democracy. You can do more than contact us, you can become us!<br>
-  Do the right thing: follow us on twitter or join our group on Facebook. This will automatically give you citizenship. Check the top right corner, you are 2 clicks away of gaining a new nationality.<br>
+  We are the first social media based democracy. You can do more than contact us, you can become us!<br/>
+  Do the right thing: follow us on twitter or join our group on Facebook. This will automatically give you citizenship. Check the top right corner, you are 2 clicks away of gaining a new nationality.<br/>
   What does it do for your national identity? You tell us...
     </Container>
     <Footer />

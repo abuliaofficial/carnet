@@ -13,6 +13,7 @@ export default class ProjectListing extends React.PureComponent {
         path: artEdge.node.fields.slug,
         cover: artEdge.node.frontmatter.cover.childImageSharp.sizes,
         title: artEdge.node.frontmatter.title,
+        excerpt: artEdge.node.excerpt,
         material: artEdge.node.frontmatter.material,
         imageURL: artEdge.node.frontmatter.cover.childImageSharp.sizes.src,
       });
@@ -38,6 +39,9 @@ export default class ProjectListing extends React.PureComponent {
                 </h2>
                 <div className={styles.service} key={project.material}>
                   {project.material}
+                </div>
+                <div className={styles.excerpt} key={project.excerpt}>
+                  {project.excerpt}
                 </div>
               </Link>
             </div>

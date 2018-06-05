@@ -69,11 +69,10 @@ const Project = props => {
         </Palette>
       </div>
       <Container>
+        <div className={styles.content} dangerouslySetInnerHTML={{ __html: postNode.html }} />
          <div className={styles.image}>
          <img src={project.cover.childImageSharp.resize.src} alt={project.title}/>
-
         </div>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: postNode.html }} />
       </Container>
       <Footer />
     </div>

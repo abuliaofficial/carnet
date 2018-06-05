@@ -69,6 +69,14 @@
   }
 }
 
+.excerpt {
+  text-align:justify;
+  padding-top: 1rem;
+  color:#eee;
+  opacity:1;
+  border-radius:5px;
+}
+
 .overlay {
   background-color: $brand-primary;
   height: 100%;
@@ -77,4 +85,5 @@
   top: 0;
   width: 100%;
   z-index: -1;
+  opacity:0.9;
 }

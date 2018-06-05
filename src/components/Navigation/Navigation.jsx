@@ -7,7 +7,7 @@ import { Fade } from 'react-reveal';
 import config from '../../../config/SiteConfig';
 import styles from './Navigation.module.scss';
 import './Headroom.scss';
-
+import logo from '../../../static/logos/logo-1024.png';
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -25,12 +25,16 @@ export default class Navigation extends Component {
     this.setState({ menuOpen: false });
   }
   render() {
+                //<Link to="/">
+                //</Link>
+   //<img src={logo} title='logO'>
     return (
       <header>
         <Headroom calcHeightOnResize disableInlineStyles>
           <Fade down duration={2000} className={styles.wrapper}>
             <nav className={styles.navigation}>
               <span>
+
                 <Link to="/about" activeClassName="active">
                   About
                 </Link>
