@@ -8,7 +8,6 @@ export default class ProjectListing extends React.PureComponent {
   getList() {
     const List = [];
     this.props.artEdges.forEach(artEdge => {
-      console.log(artEdge);
       List.push({
         path: artEdge.node.fields.slug,
         cover: artEdge.node.frontmatter.cover.childImageSharp.sizes,

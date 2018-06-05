@@ -32,6 +32,11 @@ const Project = props => {
                   {project.title}
                 </Fade>
               </div>
+                <div className={styles.pagination}>
+                  <Fade up duration={1250} className={styles.top}>
+                    <ProjectPagination next={next} prev={prev} />
+                  </Fade>
+                </div>
               <div className={styles.information}>
                 <div className={styles.infoBlock}>
                   <Fade up duration={1250} className={styles.top}>
@@ -56,11 +61,6 @@ const Project = props => {
                   </Fade>
                   <Fade up duration={1250} delay={500} className={styles.bottom}>
                     {project.material}
-                  </Fade>
-                </div>
-                <div className={styles.infoBlock}>
-                  <Fade up duration={1250} className={styles.top}>
-                    <ProjectPagination next={next} prev={prev} />
                   </Fade>
                 </div>
               </div>

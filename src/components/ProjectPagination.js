@@ -35,21 +35,22 @@ const Next = styled.div`
   margin-left: auto;
 `;
 
+
 const ProjectPagination = ({ next, prev }) => (
   <Wrapper>
+    
     {prev && (
       <Prev>
-        <Link to={prev.fields.slug}>
+        <Link to={prev.fields.slug} title={prev.frontmatter.title}>
           <img src={arrowLeft} alt="Arrow Left" />
-          {prev.frontmatter.title}
+          
         </Link>
       </Prev>
     )}
 
     {next && (
       <Next>
-        <Link to={next.fields.slug}>
-          {next.frontmatter.title}
+        <Link to={next.fields.slug} title={next.frontmatter.title}>
           <img src={arrowRight} alt="Arrow Right" />
         </Link>
       </Next>
