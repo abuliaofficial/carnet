@@ -46,12 +46,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors);
         }
 
-        result.data.projects.edges.forEach(edge => {
+        result.data.projects.edges.forEach((edge,index) => {
+          console.log(edge);
+          const prev = index === 0 ? false : result.data.projects.edges[index - 1].node;
+          const next = index === result.data.projects.edges.length - 1 ? false : result.data.projects.edges[index + 1].node;
           createPage({
             path: edge.node.fields.slug,
             component: projectPage,
             context: {
               slug: edge.node.fields.slug,
+              prev,
+              next
             },
           });
         });

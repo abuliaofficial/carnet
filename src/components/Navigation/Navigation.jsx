@@ -39,7 +39,7 @@ export default class Navigation extends Component {
                   About
                 </Link>
                 <Link to="/contact" activeClassName="active">
-                  Contact
+                  Passports and Visas
                 </Link>
               </span>
             </nav>
